@@ -19,11 +19,14 @@ paginate = 10
   TocOpen = false
   DateFormat = "2 January 2006"
 
-  label = { text = "Nom Cabinet", icon = "", iconHeight = 0 }
+[params.label]
+  text = "Nom Cabinet"
+  icon = ""
+  iconHeight = 0
 
-  [params.homeInfoParams]
-    Title = "Conseil en entreprise pragmatique, sans blabla."
-    Content = "PME & ETI — stratégie, opérations et transformation numérique. Premier diagnostic offert."
+[params.homeInfoParams]
+  Title = "Conseil en entreprise pragmatique, sans blabla."
+  Content = "PME & ETI — stratégie, opérations et transformation numérique. Premier diagnostic offert."
 
 [[menu.main]]
   name = "Services"
@@ -42,11 +45,14 @@ paginate = 10
   url = "/contact/"
   weight = 40
 
-[params.socialIcons]
-  - name = "Email"
-    url = "mailto:vous@exemple.com"
-  - name = "LinkedIn"
-    url = "https://www.linkedin.com/in/votreprofil"
+# 👇 En TOML, on répète la table avec [[...]] (pas de tirets)
+[[params.socialIcons]]
+  name = "Email"
+  url = "mailto:vous@exemple.com"
+[[params.socialIcons]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/votreprofil"
 
-[markup.goldmark.renderer]
-  unsafe = true
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
