@@ -1,6 +1,6 @@
 baseURL = "https://soconseil.github.io/Conseil-site/"
 languageCode = "fr-fr"
-title = "Nom de votre cabinet"
+title = "SoConSeil"
 theme = "PaperMod"
 
 [outputs]
@@ -22,7 +22,7 @@ theme = "PaperMod"
   DateFormat = "2 January 2006"
 
 [params.label]
-  text = "Nom Cabinet"
+  text = "SoConSeil"
   icon = ""
   iconHeight = 0
 
@@ -52,11 +52,11 @@ theme = "PaperMod"
 
 [[params.socialIcons]]
   name = "Email"
-  url = "mailto:vous@exemple.com"
+  url = "mailtovous@gmail.com"
 
 [[params.socialIcons]]
   name = "LinkedIn"
-  url = "https://www.linkedin.com/in/votreprofil"
+  url = "https://www.linkedIn.com/in/lunt"
 
 [markup]
   [markup.goldmark.renderer]
